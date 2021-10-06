@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #caf0f8;
+    --secondary-color: #03045e;
+    --text-color: #03045e;
+    --thrid-color: #f6f6f6;
+    --fourth-color: #3700b8;
+}
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(file:///C:/Users/USER/Desktop/Amr%20Ashebo-Projects/Summary%20Component/Images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+    height: 600px;
+}
+
+#image {
+    width: 100%;
+    height: 30%;
+    background-color: violet;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 12px 10px 12px;
+    color: var(--text-color);
+}
+
+#text h2 {
+    margin-bottom: 15px;
+}
+
+#plan {
+    height: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: violet;
+    margin-left: 15px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: var(--thrid-color);
+    color: var(--text-color);
+}
+
+#price h6 {
+    font-size: 17px;
+}
+
+#price p {
+    font-size: 14px;
+}
+
+#plan a {
+    font-size: 13px;
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#payment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btn1 {
+    width: 90%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--thrid-color);
+    background-color: var(--fourth-color);
+    cursor: pointer;
+    box-shadow: 0px 16px 60px var(--fourth-color);
+}
+
+#btn1:hover {
+    opacity: 0.9;
+}
+
+#payment a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: #6c757d;
+}
+
+#payment a:hover,
+#plan a:hover {
+    color: black;
+}
+
+@media all and (min-width:320px) and (max-width:767px) {
+    #main {
+        width: 90%;
+    }
+}
