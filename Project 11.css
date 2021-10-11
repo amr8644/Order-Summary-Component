@@ -130,8 +130,8 @@ body {
     color: black;
 }
 
-@media all and (min-width:320px) and (max-width:767px) {
+@media screen and (max-width:320px) {
     #main {
-        width: 90%;
+        height: 650px;
     }
 }
